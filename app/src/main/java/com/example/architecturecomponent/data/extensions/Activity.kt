@@ -1,4 +1,4 @@
-package com.dream.architecturecomponents.data.extension
+package com.example.architecturecomponent.data.extensions
 
 import android.app.ActivityOptions
 import android.content.Intent

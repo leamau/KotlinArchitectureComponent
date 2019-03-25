@@ -1,4 +1,4 @@
-package com.dream.architecturecomponents.data.ui
+package com.example.architecturecomponent.data.ui
 
 import android.app.Application
 import com.example.architecturecomponent.data.data.Recipe

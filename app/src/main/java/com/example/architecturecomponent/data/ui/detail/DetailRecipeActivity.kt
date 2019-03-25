@@ -1,10 +1,10 @@
-package com.dream.architecturecomponents.ui.movies.detail
+package com.example.architecturecomponent.data.ui.detail
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import com.example.architecturecomponent.R
+import com.example.architecturecomponent.data.data.R
 import com.example.architecturecomponent.data.data.Recipe
 import com.example.architecturecomponent.data.data.RecipeRepository
 import kotlinx.android.synthetic.main.activity_detail_recipe.*

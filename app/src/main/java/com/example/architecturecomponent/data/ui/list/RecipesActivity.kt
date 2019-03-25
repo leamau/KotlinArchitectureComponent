@@ -1,15 +1,15 @@
-package com.dream.architecturecomponents.ui.movies.list
+package com.example.architecturecomponent.data.ui.list
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.dream.architecturecomponents.extension.startAnimatedActivity
-import com.dream.architecturecomponents.ui.movies.create.CreateRecipeActivity
-import com.dream.architecturecomponents.ui.movies.detail.DetailRecipeActivity
-import com.example.architecturecomponent.R
+import com.example.architecturecomponent.data.data.R
 import com.example.architecturecomponent.data.data.Recipe
 import com.example.architecturecomponent.data.data.RecipeRepository
+import com.example.architecturecomponent.data.extensions.startAnimatedActivity
+import com.example.architecturecomponent.data.ui.create.CreateRecipeActivity
+import com.example.architecturecomponent.data.ui.detail.DetailRecipeActivity
 import kotlinx.android.synthetic.main.activity_recipes.*
 import org.jetbrains.anko.*
 import org.jetbrains.anko.sdk27.coroutines.onClick

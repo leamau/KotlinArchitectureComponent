@@ -1,15 +1,15 @@
-package com.example.architecturecomponent.data.ui.recipes.list
+package com.example.architecturecomponent.data.ui.list
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.architecturecomponent.data.ui.recipes.create.CreateRecipeActivity
 import com.example.architecturecomponent.data.data.R
 import com.example.architecturecomponent.data.data.Recipe
 import com.example.architecturecomponent.data.data.RecipeRepository
 import com.example.architecturecomponent.data.extensions.startAnimatedActivity
-import com.example.architecturecomponent.data.ui.recipes.detail.DetailRecipeActivity
+import com.example.architecturecomponent.data.ui.create.CreateRecipeActivity
+import com.example.architecturecomponent.data.ui.detail.DetailRecipeActivity
 import kotlinx.android.synthetic.main.activity_recipes.*
 import org.jetbrains.anko.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
@@ -27,13 +27,13 @@ class RecipesActivity : AppCompatActivity() {
         setupRecyclerView()
     }
 
-    override fun onResume() {
+    /*override fun onResume() {
         super.onResume()
         doAsync {
             val data = RecipeRepository.getAll()
             uiThread { recipesAdapter.replaceData(data) }
         }
-    }
+    }*/
 
     private fun setupAdapter() {
         recipesAdapter.apply {
@@ -54,6 +54,14 @@ class RecipesActivity : AppCompatActivity() {
         }
     }
 
+    private fun showDeletePopup(Recipe: Recipe) {
+        alert(getString(R.string.delete_recipe_warning, Recipe.title)) {
+            yesButton { RecipeRepository.delete(Recipe) }
+            noButton { }
+        }.show()
+    }
+
+    /*
     private fun showDeletePopup(recipe: Recipe) {
         alert(getString(R.string.delete_recipe_warning, recipe.title)) {
             yesButton {
@@ -65,5 +73,5 @@ class RecipesActivity : AppCompatActivity() {
             }
             noButton { }
         }.show()
-    }
+    }*/
 }

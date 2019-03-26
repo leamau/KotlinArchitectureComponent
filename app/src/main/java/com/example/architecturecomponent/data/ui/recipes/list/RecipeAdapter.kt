@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.architecturecomponent.data.R
+import com.example.architecturecomponent.data.data.R
 import com.example.architecturecomponent.data.data.Recipe
 import kotlinx.android.synthetic.main.item_recipe.view.*
 import org.jetbrains.anko.sdk27.coroutines.onClick

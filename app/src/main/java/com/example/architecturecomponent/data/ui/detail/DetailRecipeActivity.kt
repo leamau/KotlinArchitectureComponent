@@ -1,4 +1,4 @@
-package com.example.architecturecomponent.data.ui.recipes.detail
+package com.example.architecturecomponent.data.ui.detail
 
 import android.os.Bundle
 import android.view.MenuItem

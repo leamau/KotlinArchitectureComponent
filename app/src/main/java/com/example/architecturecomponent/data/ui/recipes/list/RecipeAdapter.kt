@@ -66,33 +66,3 @@ class RecipesAdapter: RecyclerView.Adapter<RecipesAdapter.RecipeViewHolder>() {
 
     }
 }
-
-/*
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.LifecycleOwner
-import com.dream.architecturecomponents.R
-import com.dream.architecturecomponents.data.model.Recipe
-import com.dream.architecturecomponents.databinding.ItemRecipeBinding
-import com.dream.architecturecomponents.ui.base.BaseAdapter
-import com.dream.architecturecomponents.ui.base.BaseViewHolder
-import com.dream.architecturecomponents.utils.OnItemClickListener
-
-class RecipesAdapter(lifecycleOwner: LifecycleOwner): BaseAdapter<Recipe>(lifecycleOwner) {
-
-    override fun layoutFor(position: Int): Int = R.layout.item_recipe
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder<Recipe, *> {
-        val binding: ItemRecipeBinding = DataBindingUtil.inflate(LayoutInflater.from(parent.context), viewType, parent, false)
-        return MovieViewHolder(binding)
-    }
-
-    class MovieViewHolder(private val binding: ItemRecipeBinding): BaseViewHolder<Recipe, ItemRecipeBinding>(binding) {
-
-        override fun bind(lifecycleOwner: LifecycleOwner, item: Recipe, listener: OnItemClickListener<Recipe>) {
-            super.bind(lifecycleOwner, item, listener)
-            binding.title.text = item.title
-        }
-    }
-}*/

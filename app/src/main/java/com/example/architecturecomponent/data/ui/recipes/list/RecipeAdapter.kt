@@ -29,8 +29,7 @@ class RecipesAdapter: RecyclerView.Adapter<RecipesAdapter.RecipeViewHolder>() {
     override fun getItemCount(): Int = data.size
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
-        holder.bind(data[position], object:
-                OnRecipeClickListener {
+        holder.bind(data[position], object: OnRecipeClickListener {
             override fun onItemClick(recipe: Recipe) {
                 onClick?.invoke(recipe)
             }

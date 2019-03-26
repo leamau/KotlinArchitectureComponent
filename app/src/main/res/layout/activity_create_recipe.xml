@@ -59,26 +59,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/releaseDateLayout"
-                style="@style/TextInput"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/overviewLayout"
-                android:hint="@string/releaseDate">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/releaseDateEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:focusableInTouchMode="false"
-                    android:cursorVisible="false"
-                    tools:text="74"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

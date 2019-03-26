@@ -14,9 +14,9 @@ class App: Application() {
 
 
         val recipes = listOf(
-                Recipe(id = 1, title = "Avengers", readyInMinutes = 10),
-                Recipe(id = 2, title = "Jumanji", readyInMinutes = 15),
-                Recipe(id = 3, title = "Conjuring: Les dossiers Warren", readyInMinutes = 20)
+                Recipe(id = 1, title = "Burger", readyInMinutes = 10),
+                Recipe(id = 2, title = "tartiflette", readyInMinutes = 15),
+                Recipe(id = 3, title = "chou fleur", readyInMinutes = 20)
         )
 
         doAsync { RecipeRepository.insertAll(recipes) }
